@@ -1,0 +1,5 @@
+### IntelliJ IDEA ###
+.idea/
+out/
+.gitignore
+test_task.iml
