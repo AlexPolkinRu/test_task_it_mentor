@@ -28,7 +28,7 @@ public class Main {
         for (int i = 0; i < testStrings.length; i++) {
             try {
                 System.out.print("Тест " + (i + 1) + ": ");
-                System.out.println(calc(testStrings[i]));
+                System.out.println(testStrings[i] + " = " + calc(testStrings[i]));
             } catch (Exception e) {
                 System.out.println(e.toString());
             }
