@@ -36,10 +36,10 @@ public class Main {
     }
 
     public static String calc(String input) throws Exception {
-        String regex = "^1?\\d{1}\\s?[*/+-]\\s?1?\\d{1}";
+        String regexInputVerification = "^1?\\d\\s?[*/+-]\\s?1?\\d";
         String regexSign = "[*/+-]";
 
-        if (Pattern.matches(regex, input)) {
+        if (Pattern.matches(regexInputVerification, input)) {
             String[] args = input.split(regexSign);
             int a = Integer.parseInt(args[0].trim());
             int b = Integer.parseInt(args[1].trim());
