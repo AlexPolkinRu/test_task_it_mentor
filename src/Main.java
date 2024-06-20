@@ -26,8 +26,8 @@ public class Main {
                 "3 + 2 3" // Тест 14: Ошибка формата
         };
         for (int i = 0; i < testStrings.length; i++) {
+            System.out.print("Тест " + (i + 1) + ": ");
             try {
-                System.out.print("Тест " + (i + 1) + ": ");
                 System.out.println(testStrings[i] + " = " + calc(testStrings[i]));
             } catch (Exception e) {
                 System.out.println(testStrings[i] + "    --->   " + e.toString());
