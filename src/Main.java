@@ -30,7 +30,7 @@ public class Main {
                 System.out.print("Тест " + (i + 1) + ": ");
                 System.out.println(testStrings[i] + " = " + calc(testStrings[i]));
             } catch (Exception e) {
-                System.out.println(e.toString());
+                System.out.println(testStrings[i] + "    --->   " + e.toString());
             }
         }
     }
